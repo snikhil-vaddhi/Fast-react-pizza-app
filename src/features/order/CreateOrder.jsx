@@ -90,7 +90,7 @@ function CreateOrder() {
             )}
           </div>
           {!position.latitude && !position.longitude && (
-            <span className="absolute right-[3px] top-[3px] z-50  md:right-[5px] md:top-[5px]">
+            <span className="absolute right-[3px] top-[35px] z-50 sm:right-[3px] sm:top-[3px]  md:right-[5px] md:top-[5px]">
               <Buttons
                 disabled={isLoadingAddress}
                 type="small"
@@ -115,7 +115,7 @@ function CreateOrder() {
             onChange={(e) => setWithPriority(e.target.checked)}
           />
           <label htmlFor="priority" className="font-medium">
-            Want to yo give your order priority?
+            Want to give your order priority?
           </label>
         </div>
 
